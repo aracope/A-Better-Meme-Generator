@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="meme-generator-wrapper">
+     
+      <div class="input-container">
+        <h1>Dank Meme Generator</h1>
+        <hr>
+   
+      <form class="meme-input-form" action="#">
+        <label for="img-url">Image URL:</label>
+        <input
+        type="url"
+        id="img-url"
+        placeholder="Paste image link here">
+        
+        <label for="img-file">Image File:</label>
+        <input
+        type="file"
+        accept="image/gif, image/jpeg, image/png"
+        id="img-file"
+        placeholder="Upload image file here">
+
+        <label for="top-text-input">Top Text:</label>
+          <input
+          required
+          type="text"
+          id="top-text-input"
+          placeholder="Text for top of meme">
+
+        <label for="bottom-text-input">Bottom Text:</label>
+          <input
+        required
+        type="text"
+        id="bottom-text-input"
+        placeholder="Text for bottom of meme">
+        
+        <div class="button-wrapper">
+          <input
+          type="submit" 
+          class="btn generate-meme" 
+          value="Dank My Meme">
+          <input
+          type="reset"
+          class="btn reset-form"
+          value="Start Over!">
+        </div>
+
+      </form>
+      </div>
+    <hr> 
+ 
+   
+   
+      <div class="meme-museum">  <!--To contain multiple meme results -->     
+        <div class="meme-gallery"></div> <!--image container-->
+      <!-- <div class="top-text"></div> -->
+      <!--<div class="bottom-text"></div> -->
+    
+  </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
